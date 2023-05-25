@@ -5,7 +5,7 @@ i = slovo[:: -1]
 if i == slovo:
     print('+')
 else:
-   print('-')
+    print('-')
 #2
 print("Введіть текст і слово")
 text = input(" ")
@@ -16,24 +16,11 @@ else:
       print('No')
 
 #3
-print("Користувач вводить рядок")
-string = 'abcqwrrtt'
-place = string.replace('abc', 'www')
-just = (string + 'qqq')
-if place in string:
-    print(string)
-else:
-    print(just)
-#3
-string = 'abcbcrewer'
-def f(string):
-    if string[:3] == 'abc':
-     string = 'www' + string[3:]
-    else:
-     string += 'qqq'
-    return string
-print(f(string))
-
+text = input("Введіть рядок: ")
+if text.startswith("abc"):
+  text = text.replace("abc", "www")#else:
+  text += "qqq"
+print(text)
 
 #4
 print("Користувач вводить текст")
