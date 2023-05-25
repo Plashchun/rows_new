@@ -18,7 +18,7 @@ else:
 #3
 text = input("Введіть рядок: ")
 if text.startswith("abc"):
-  text = text.replace("abc", "www")#
+  text = text.replace("abc", "www")
 else:
   text += "qqq"
 print(text)
